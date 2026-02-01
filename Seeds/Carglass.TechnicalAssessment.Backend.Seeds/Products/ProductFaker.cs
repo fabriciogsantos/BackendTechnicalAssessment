@@ -13,7 +13,7 @@ namespace Carglass.TechnicalAssessment.Backend.Seeds.Products
                 .RuleFor(c => c.Id, _ => id++)
                 .RuleFor(c => c.Name, f => f.Commerce.ProductName())
                 .RuleFor(c => c.Type, f => f.Random.Int(1, 99))
-                .RuleFor(c => c.NumTerminal, f => f.Random.Double())
+                .RuleFor(c => c.NumTerminal, f => f.Random.Int(1, 999999999))
                 .RuleFor(c => c.SoldAt, f => f.Date.Past(2));
         }
     }
