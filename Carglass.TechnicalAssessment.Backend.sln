@@ -1,17 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.7.34024.191
+VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.BL", "Carglass.TechnicalAssessment.Backend.BL\Carglass.TechnicalAssessment.Backend.BL.csproj", "{D1477001-F901-44D2-A443-B4A1B9151489}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB0D031F-4801-47F1-9C9C-6307A684064B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.DL", "Carglass.TechnicalAssessment.Backend.DL\Carglass.TechnicalAssessment.Backend.DL.csproj", "{FE18790F-6FBE-46E4-901B-ED1E965B66C4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{69A22D84-CAF5-45CB-A550-FB2CF6948FF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Api", "Carglass.TechnicalAssessment.Backend.Api\Carglass.TechnicalAssessment.Backend.Api.csproj", "{F22D49EB-3E97-4140-88B2-32AA7FAB8012}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seeds", "seeds", "{C080D1B3-8F27-47E1-8E25-9EFE8C6D9AA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Dtos", "Carglass.TechnicalAssessment.Backend.Dtos\Carglass.TechnicalAssessment.Backend.Dtos.csproj", "{23371933-171C-486D-A570-F46C7F619FAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Seeds", "Seeds\Carglass.TechnicalAssessment.Backend.Seeds\Carglass.TechnicalAssessment.Backend.Seeds.csproj", "{BF966FBF-0E51-4C77-B68F-F833B71E7234}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Entities", "Carglass.TechnicalAssessment.Backend.Entities\Carglass.TechnicalAssessment.Backend.Entities.csproj", "{6744C5CB-3732-4241-9014-3AE131AE544D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Api", "src\Carglass.TechnicalAssessment.Backend.Api\Carglass.TechnicalAssessment.Backend.Api.csproj", "{5F2C0523-92A9-262B-BFD3-50EAB3738444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.BL", "src\Carglass.TechnicalAssessment.Backend.BL\Carglass.TechnicalAssessment.Backend.BL.csproj", "{B86AFE08-8438-777E-1536-5FAA53D1BAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Core", "src\Carglass.TechnicalAssessment.Backend.Core\Carglass.TechnicalAssessment.Backend.Core.csproj", "{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.DL", "src\Carglass.TechnicalAssessment.Backend.DL\Carglass.TechnicalAssessment.Backend.DL.csproj", "{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Dtos", "src\Carglass.TechnicalAssessment.Backend.Dtos\Carglass.TechnicalAssessment.Backend.Dtos.csproj", "{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.Entities", "src\Carglass.TechnicalAssessment.Backend.Entities\Carglass.TechnicalAssessment.Backend.Entities.csproj", "{FA82F150-5F6A-C846-4740-059A2DCB3B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carglass.TechnicalAssessment.Backend.BL.UnitTest", "tests\Carglass.TechnicalAssessment.Backend.BL.UnitTest\Carglass.TechnicalAssessment.Backend.BL.UnitTest.csproj", "{23D261A2-6F05-4E22-B0C7-F05D6468EDEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,29 +31,51 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D1477001-F901-44D2-A443-B4A1B9151489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1477001-F901-44D2-A443-B4A1B9151489}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1477001-F901-44D2-A443-B4A1B9151489}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1477001-F901-44D2-A443-B4A1B9151489}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE18790F-6FBE-46E4-901B-ED1E965B66C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE18790F-6FBE-46E4-901B-ED1E965B66C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE18790F-6FBE-46E4-901B-ED1E965B66C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE18790F-6FBE-46E4-901B-ED1E965B66C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F22D49EB-3E97-4140-88B2-32AA7FAB8012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F22D49EB-3E97-4140-88B2-32AA7FAB8012}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F22D49EB-3E97-4140-88B2-32AA7FAB8012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F22D49EB-3E97-4140-88B2-32AA7FAB8012}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23371933-171C-486D-A570-F46C7F619FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23371933-171C-486D-A570-F46C7F619FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23371933-171C-486D-A570-F46C7F619FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23371933-171C-486D-A570-F46C7F619FAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6744C5CB-3732-4241-9014-3AE131AE544D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6744C5CB-3732-4241-9014-3AE131AE544D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6744C5CB-3732-4241-9014-3AE131AE544D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6744C5CB-3732-4241-9014-3AE131AE544D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF966FBF-0E51-4C77-B68F-F833B71E7234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF966FBF-0E51-4C77-B68F-F833B71E7234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF966FBF-0E51-4C77-B68F-F833B71E7234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF966FBF-0E51-4C77-B68F-F833B71E7234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2C0523-92A9-262B-BFD3-50EAB3738444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2C0523-92A9-262B-BFD3-50EAB3738444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2C0523-92A9-262B-BFD3-50EAB3738444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2C0523-92A9-262B-BFD3-50EAB3738444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86AFE08-8438-777E-1536-5FAA53D1BAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86AFE08-8438-777E-1536-5FAA53D1BAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86AFE08-8438-777E-1536-5FAA53D1BAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86AFE08-8438-777E-1536-5FAA53D1BAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA82F150-5F6A-C846-4740-059A2DCB3B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA82F150-5F6A-C846-4740-059A2DCB3B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA82F150-5F6A-C846-4740-059A2DCB3B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA82F150-5F6A-C846-4740-059A2DCB3B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D261A2-6F05-4E22-B0C7-F05D6468EDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D261A2-6F05-4E22-B0C7-F05D6468EDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D261A2-6F05-4E22-B0C7-F05D6468EDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D261A2-6F05-4E22-B0C7-F05D6468EDEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF966FBF-0E51-4C77-B68F-F833B71E7234} = {C080D1B3-8F27-47E1-8E25-9EFE8C6D9AA0}
+		{5F2C0523-92A9-262B-BFD3-50EAB3738444} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{B86AFE08-8438-777E-1536-5FAA53D1BAA7} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{18ED74BA-1A5C-CEA9-D9AA-C52315DC0474} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{13CADF6E-C1A8-BE2C-CD05-ED27F5F8BFEF} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{DC4FDA3D-B8E5-20D2-C817-70E35B950AC7} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{FA82F150-5F6A-C846-4740-059A2DCB3B59} = {AB0D031F-4801-47F1-9C9C-6307A684064B}
+		{23D261A2-6F05-4E22-B0C7-F05D6468EDEC} = {69A22D84-CAF5-45CB-A550-FB2CF6948FF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23D9295B-8EF1-4252-B177-A6170692C519}
