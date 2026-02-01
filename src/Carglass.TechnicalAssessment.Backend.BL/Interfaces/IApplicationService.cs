@@ -6,7 +6,7 @@ public interface IApplicationService<TDto>
 {
 	OperationResult<IEnumerable<TDto>> GetAll(Pagination pagination);
 	OperationResult<TDto> GetById(int id);
-	OperationResult<TDto> Create(TDto product);
-	OperationResult Update(TDto product);
+	OperationResult<TDto> Create(TDto dto);
+	OperationResult Update(TDto dto);
 	OperationResult Delete(int id);
 }

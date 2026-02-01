@@ -8,11 +8,11 @@ namespace Carglass.TechnicalAssessment.Backend.Api.Controllers;
 
 [ApiController]
 [Route("clients")]
-public class ClientController : ControllerBase
+public class ClientsController : ControllerBase
 {
     private readonly IClientAppService _clientAppService;
 
-    public ClientController(IClientAppService clientAppService)
+    public ClientsController(IClientAppService clientAppService)
     {
         _clientAppService = clientAppService;
     }

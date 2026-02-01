@@ -8,11 +8,11 @@ namespace Carglass.TechnicalAssessment.Backend.Api.Controllers;
 
 [ApiController]
 [Route("Products")]
-public class ProductController : ControllerBase
+public class ProductsController : ControllerBase
 {
     private readonly IProductAppService _productAppService;
 
-    public ProductController(IProductAppService productAppService)
+    public ProductsController(IProductAppService productAppService)
     {
         _productAppService = productAppService;
     }

@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace Carglass.TechnicalAssessment.Backend.Dtos.Extensions
 {
-    public static class VallidatorExtensions
+    public static class ValidatorExtensions
     {
 		private static readonly Regex NifRegex =new Regex(@"^\d{8}[A-Za-z]$", RegexOptions.Compiled, TimeSpan.FromMilliseconds(100));
 		public static IRuleBuilderOptions<T, string> MustValidNumberDocument<T>(this IRuleBuilder<T,string> ruleBuilder){

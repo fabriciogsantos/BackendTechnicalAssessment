@@ -60,3 +60,30 @@ Además, nos gustaría poder disponer de un controller llamado "HealthCheck", qu
 1. Crear proyecto de Unit Testing donde pruebes las funciones CRUD.
 2. Conseguir inyección de dependencias de validadores de forma genérica. (Parecido a la inyección de AppServices del Module de BL)
 3. Coméntanos si has encontrado código mejorable en la prueba. (No cumple naming convention, se incumple algún principio SOLID, hay algo mal estructurado, etc.)
+
+# Entrega 01/02/2026 
+- [x] 1 . Has podido intuir y rellenar el código que faltaba para que funcionase el CRUD de clientes.
+- [x] 2. Has podido implementar las mejoras (o algunas de ellas) solicitadas en el CRUD de clientes.
+- [x] 3. Has utilizado un buen naming convention en el refactor de ClientAppService.
+- [x] 4. Has podido implementar el CRUD de productos, basándote en el de clientes.
+- [x] 5. Has podido crear el controller de HealthCheck, con el EndPoint correspondiente.
+- [x] 6. Crear proyecto de Unit Testing donde pruebes las funciones CRUD.
+- [x] 7. Conseguir inyección de dependencias de validadores de forma genérica. (Parecido a la inyección de AppServices del Module de BL)
+
+- [x] 8.Coméntanos si has encontrado código mejorable en la prueba. (No cumple naming convention, se incumple algún principio SOLID, hay algo mal estructurado, etc.)
+	- Organización en carpetas src, test y seed
+	- Acción DELETE por Id
+	- Implementación del patrón OperationResult
+	- Añadida paginación en el método GetAll
+	- Añadidos archivos de resources para mensajes
+ 	- Eliminadas carpetas con nombre _Base
+	- Mapeo de namespaces conforme a la carpeta virtual
+	- Creado un proyecto de Seeds para generar grandes volúmenes de datos para pruebas
+    - Renombrada la interfaz ICrudRepository a IRepository
+	- Implementado un repositorio genérico
+	- Añadido retorno bool en los métodos Create, Update y Delete del repositorio genérico
+	- Añadido HealthCheck ready con estados Healthy, Degraded y Unhealthy, preparado para uso futuro
+	- Separadas las configuraciones de Program en métodos de extensión
+	- Simplificado el Profile de AutoMapper utilizando ReverseMap
+	- Implementado un RuleBuilder para validar el NIF
+	- Añadido logging para mejorar la observabilidad
